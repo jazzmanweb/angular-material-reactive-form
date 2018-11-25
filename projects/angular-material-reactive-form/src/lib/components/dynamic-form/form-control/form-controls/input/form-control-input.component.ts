@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { AbstractFormComponent } from '../../../abstract-views/form/abstract-from.component';
+import { AbstractFormComponent } from '../../../../abstract-form/abstract-from.component';
 import { FormGroup } from '@angular/forms';
-import { FormControlModel } from '../../../../model/models/form-control.model';
+import { FormControlModel } from 'projects/angular-material-reactive-form/src/lib/model/models/form-control.model';
 
 @Component({
   selector: 'form-control-input',
