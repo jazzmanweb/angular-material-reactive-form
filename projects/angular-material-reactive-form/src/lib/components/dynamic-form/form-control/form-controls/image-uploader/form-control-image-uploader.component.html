@@ -26,7 +26,7 @@
 						<strong>{{ item?.file?.name }}</strong>
 					</td>
 					<td>
-						<span *ngIf="uploader?.isHTML5">
+						<!-- <span *ngIf="uploader?.isHTML5">
 							{{
 								item?.file?.size / 1024 / 1024 | number: '.2'
 							}}
@@ -36,7 +36,7 @@
 							*ngIf="uploader?.isHTML5"
 							mode="determinate"
 							value="{{item.progress}}"
-						></mat-progress-bar>
+						></mat-progress-bar> -->
 					</td>
 					<td class="text-center">
 						<mat-icon *ngIf="item.isSuccess" color="prime">
