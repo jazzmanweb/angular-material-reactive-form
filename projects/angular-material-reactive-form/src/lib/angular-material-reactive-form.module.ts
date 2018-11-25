@@ -1,6 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AngularMaterialReactiveFormComponent } from './angular-material-reactive-form.component';
-import { AngularMaterialModule } from './common/modules/angular-material.module';
 import { DynamicFormComponent } from './components/dynamic-form/dynamic-form.component';
 import { FormArrayComponent } from './components/dynamic-form/form-array/form-array.component';
 import { FormControlComponent } from './components/dynamic-form/form-control/form-control.component';
@@ -14,6 +13,43 @@ import { FormGroupComponent } from './components/dynamic-form/form-group/form-gr
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FileUploadModule } from 'ng2-file-upload';
+import {
+	MatAutocompleteModule,
+	MatBadgeModule,
+	MatBottomSheetModule,
+	MatButtonModule,
+	MatButtonToggleModule,
+	MatCardModule,
+	MatCheckboxModule,
+	MatChipsModule,
+	MatStepperModule,
+	MatDatepickerModule,
+	MatDialogModule,
+	MatDividerModule,
+	MatExpansionModule,
+	MatGridListModule,
+	MatIconModule,
+	MatInputModule,
+	MatListModule,
+	MatMenuModule,
+	MatNativeDateModule,
+	MatPaginatorModule,
+	MatProgressBarModule,
+	MatProgressSpinnerModule,
+	MatRadioModule,
+	MatRippleModule,
+	MatSelectModule,
+	MatSidenavModule,
+	MatSliderModule,
+	MatSlideToggleModule,
+	MatSnackBarModule,
+	MatSortModule,
+	MatTableModule,
+	MatTabsModule,
+	MatToolbarModule,
+	MatTooltipModule,
+	MatTreeModule
+  } from '@angular/material';
 
 const COMPONENTS = [
 	AngularMaterialReactiveFormComponent,
@@ -29,17 +65,55 @@ const COMPONENTS = [
 	FormControlInputComponent,
 	FormControlTextareaComponent
 ];
+
+const MATERIAL_MODULES = [
+	MatAutocompleteModule,
+	MatBadgeModule,
+	MatBottomSheetModule,
+	MatButtonModule,
+	MatButtonToggleModule,
+	MatCardModule,
+	MatCheckboxModule,
+	MatChipsModule,
+	MatStepperModule,
+	MatDatepickerModule,
+	MatDialogModule,
+	MatDividerModule,
+	MatExpansionModule,
+	MatGridListModule,
+	MatIconModule,
+	MatInputModule,
+	MatListModule,
+	MatMenuModule,
+	MatNativeDateModule,
+	MatPaginatorModule,
+	MatProgressBarModule,
+	MatProgressSpinnerModule,
+	MatRadioModule,
+	MatRippleModule,
+	MatSelectModule,
+	MatSidenavModule,
+	MatSliderModule,
+	MatSlideToggleModule,
+	MatSnackBarModule,
+	MatSortModule,
+	MatTableModule,
+	MatTabsModule,
+	MatToolbarModule,
+	MatTooltipModule,
+	MatTreeModule
+];
+
 const MODULES = [
 	CommonModule,
 	FormsModule,
 	FileUploadModule,
-	ReactiveFormsModule,
-	AngularMaterialModule
+	ReactiveFormsModule
 ];
 
 @NgModule({
 	declarations: [COMPONENTS],
-	imports: [MODULES],
+	imports: [MODULES, MATERIAL_MODULES],
 	exports: [MODULES, COMPONENTS],
 	schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
