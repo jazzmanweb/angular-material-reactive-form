@@ -1,4 +1,4 @@
 export interface FormCustomizationInterface {
-  id?: string;
-  directory?: string;
+	id?: string;
+	directory?: string;
 }
